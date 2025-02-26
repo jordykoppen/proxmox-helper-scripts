@@ -1082,9 +1082,9 @@ build_container() {
   TEMP_DIR=$(mktemp -d)
   pushd $TEMP_DIR >/dev/null
   if [ "$var_os" == "alpine" ]; then
-    export FUNCTIONS_FILE_PATH="$(curl -s https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/alpine-install.func)"
+    export FUNCTIONS_FILE_PATH="./alpine-install.func)"
   else
-    export FUNCTIONS_FILE_PATH="$(curl -s https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/install.func)"
+    export FUNCTIONS_FILE_PATH="$(curl -s ./install.func)"
   fi
   export RANDOM_UUID="$RANDOM_UUID"
   export CACHER="$APT_CACHER"
@@ -1116,7 +1116,7 @@ build_container() {
     $PW
   "
   # This executes create_lxc.sh and creates the container and .conf file
-  bash -c "$(wget -qLO - https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/create_lxc.sh)" || exit $?
+  bash -c ../main/ct/create_lxc.sh || exit $?
 
   LXC_CONFIG=/etc/pve/lxc/${CTID}.conf
   if [ "$CT_TYPE" == "0" ]; then
@@ -1178,7 +1178,17 @@ http://dl-cdn.alpinelinux.org/alpine/latest-stable/community
 EOF'
     pct exec "$CTID" -- ash -c "apk add bash >/dev/null"
   fi
-  lxc-attach -n "$CTID" -- bash -c "$(wget -qLO - https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/install/$var_install.sh)" || exit $?
+
+  pct exec "$CTID" -- bash -c '
+    apt update && apt install fish git
+    chsh -s /usr/bin/fish
+    wget --output-documnent /tmp/nvim-linux.deb https://github.com/neovim/neovim-releases/releases/download/stable/nvim-linux-x86_64.deb
+    apt install /tmp/nvim-linux.deb
+    rm /tmp/nvim-linux.deb
+    git clone https://github.com/LazyVim/starter ~/.config/nvim
+  '
+
+  lxc-attach -n "$CTID" -- bash -c ../main/install/$var_install.sh || exit $?
 
 }
 
