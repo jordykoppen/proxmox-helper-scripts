@@ -2,7 +2,7 @@
 source <(curl -s https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/build.func)
 # Copyright (c) 2021-2025 community-scripts ORG
 # Author: Kristian Skov
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/jordykoppen/proxmox-helper-scripts/raw/main/LICENSE
 # Source: https://www.urbackup.org/
 
 APP="UrBackup Server"

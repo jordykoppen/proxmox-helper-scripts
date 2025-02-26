@@ -4,7 +4,7 @@
 # Author: tteck (tteckster)
 #         Jon Spriggs (jontheniceguy)
 # License: MIT
-# https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# https://github.com/jordykoppen/proxmox-helper-scripts/raw/main/LICENSE
 # Based on work from https://i12bretro.github.io/tutorials/0405.html
 
 source /dev/stdin <<< $(wget -qLO - https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/api.func)

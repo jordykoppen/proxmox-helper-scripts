@@ -134,7 +134,7 @@ jobs:
         run: |
           NON_COMPLIANT_FILES=""
           for FILE in ${{ steps.changed-files.outputs.files }}; do
-            if [[ "$(sed -n '5p' "$FILE")" != "# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE" ]]; then
+            if [[ "$(sed -n '5p' "$FILE")" != "# License: MIT | https://github.com/jordykoppen/proxmox-helper-scripts/raw/main/LICENSE" ]]; then
               NON_COMPLIANT_FILES="$NON_COMPLIANT_FILES $FILE"
             fi
           done

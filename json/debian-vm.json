@@ -32,7 +32,7 @@
     },
       "notes": [
     {
-      "text": "after installation, checkout: ´https://github.com/community-scripts/ProxmoxVE/discussions/836´",
+      "text": "after installation, checkout: ´https://github.com/jordykoppen/proxmox-helper-scripts/discussions/836´",
       "type": "info"
     }
   ]

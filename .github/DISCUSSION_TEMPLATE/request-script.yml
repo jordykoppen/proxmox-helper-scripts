@@ -28,7 +28,7 @@ body:
     options:
       - label: "I have searched existing [scripts](https://community-scripts.github.io/Proxmox/scripts) and found no duplicates."
         required: true
-      - label: "I have searched existing [discussions](https://github.com/community-scripts/ProxmoxVE/discussions?discussions_q=) and found no duplicate requests."
+      - label: "I have searched existing [discussions](https://github.com/jordykoppen/proxmox-helper-scripts/discussions?discussions_q=) and found no duplicate requests."
         required: true
 - type: markdown
   attributes:

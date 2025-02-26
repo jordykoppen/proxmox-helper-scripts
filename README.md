@@ -19,13 +19,13 @@
     <a href="https://ko-fi.com/community_scripts">
       <img src="https://img.shields.io/badge/Support-FF5F5F?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Donate" />
     </a>
-    <a href="https://github.com/community-scripts/ProxmoxVE/blob/main/.github/CONTRIBUTOR_AND_GUIDES/CONTRIBUTING.md">
+    <a href="https://github.com/jordykoppen/proxmox-helper-scripts/blob/main/.github/CONTRIBUTOR_AND_GUIDES/CONTRIBUTING.md">
       <img src="https://img.shields.io/badge/Contribute-ff4785?style=for-the-badge&logo=git&logoColor=white" alt="Contribute" />
     </a> 
-    <a href="https://github.com/community-scripts/ProxmoxVE/blob/main/.github/CONTRIBUTOR_AND_GUIDES/USER_SUBMITTED_GUIDES.md">
+    <a href="https://github.com/jordykoppen/proxmox-helper-scripts/blob/main/.github/CONTRIBUTOR_AND_GUIDES/USER_SUBMITTED_GUIDES.md">
       <img src="https://img.shields.io/badge/Guides-0077b5?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Guides" />
     </a> 
-    <a href="https://github.com/community-scripts/ProxmoxVE/blob/main/CHANGELOG.md">
+    <a href="https://github.com/jordykoppen/proxmox-helper-scripts/blob/main/CHANGELOG.md">
       <img src="https://img.shields.io/badge/Changelog-6c5ce7?style=for-the-badge&logo=git&logoColor=white" alt="Changelog" />
     </a>
   </p>
@@ -83,11 +83,11 @@ We appreciate any contributions to the project—whether it's bug reports, featu
 Join our community for support:
 
 - **Discord**: Join our [Proxmox Helper Scripts Discord server](https://discord.gg/UHrpNWGwkH) for real-time support.
-- **GitHub Discussions**: [Ask questions or report issues](https://github.com/community-scripts/ProxmoxVE/discussions).
+- **GitHub Discussions**: [Ask questions or report issues](https://github.com/jordykoppen/proxmox-helper-scripts/discussions).
 
 ## 🤝 Report a Bug or Feature Request
 
-If you encounter any issues or have suggestions for improvement, file a new issue on our [GitHub issues page](https://github.com/community-scripts/ProxmoxVE/issues). You can also submit pull requests with solutions or enhancements!
+If you encounter any issues or have suggestions for improvement, file a new issue on our [GitHub issues page](https://github.com/jordykoppen/proxmox-helper-scripts/issues). You can also submit pull requests with solutions or enhancements!
 
 ---
 
